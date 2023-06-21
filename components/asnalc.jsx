@@ -1,7 +1,8 @@
 import React from "react";
 import { HiOutlineLocationMarker, HiOutlineCalendar } from "react-icons/hi";
 import UserInfo from "./UserInfo";
-const PLACEHOLDER = "./Images/placeholder.jpg";
+const PLACEHOLDER = "./images/default.jpg";
+
 function PostItem({ post, modal = false }) {
   return (
     <>

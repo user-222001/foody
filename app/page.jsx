@@ -1,5 +1,5 @@
 "use client";
-import Posts from "@/components/Posts";
+import Posts from "@/components/post/Posts";
 import app from "../components/utilis/firebase.config";
 import {
   getFirestore,
@@ -46,20 +46,23 @@ const page = () => {
 
   return (
     <div className="flex flex-col gap-10">
-      <section className=" bg-neutral-100 ">
-        <div className=" grid lg:grid-cols-2 items-center justify-items-center ">
-          <div className="order-2 lg:order-1 flex flex-col justify-center items-center">
-            <p className="text-4xl font-bold md:text-7xl text-orange-600">
-              25% OFF
+      <section>
+        <div class="grid max-w-screen-xl px-4 pt-20  mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:pt-8">
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h1 class="max-w-2xl mb-6 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-black">
+              Building digital <br />
+              products &amp; brands.
+            </h1>
+            <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              This free and open-source landing page template was built using
+              the utility classes from and based on the components from the
             </p>
-            <p className="text-4xl font-bold md:text-7xl">SUMMER SALE</p>
-            <p className="mt-2 text-sm md:text-lg">For limited time only!</p>
           </div>
-          <div className="order-1 lg:order-2">
+          <div class=" lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              className="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]"
+              className="rounded-[2rem]"
               src="https://images7.alphacoders.com/977/977986.jpg"
-              alt=""
+              alt="hero image"
             />
           </div>
         </div>
