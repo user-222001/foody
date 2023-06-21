@@ -14,12 +14,10 @@ export default function RootLayout({ children }) {
     <html data-theme="cupcake" lang="en">
       <body className={inter.className}>
         <Provider>
-          <>
-            <div>
-              <Header />
-            </div>
-            <div>{children}</div>
-          </>
+          <div className="">
+            <Header />
+          </div>
+          <div className="mt-16">{children}</div>
         </Provider>
       </body>
     </html>
