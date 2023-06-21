@@ -10,16 +10,16 @@ function GameList({ onGamePress }) {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-evenly bg-slate-200 py-5  items-center mt-14 ">
+    <div className="flex flex-wrap justify-around bg-slate-200 py-5  items-center mt-14 ">
       {games?.map((item) => (
         <div
           key={item.id}
           onClick={() => onGamePress(item.name)}
           className="flex flex-col 
-            items-center cursor-pointer hover:bg-slate-400 px-16 rounded-md
+            items-center cursor-pointer hover:bg-slate-400 px-16 py-5 rounded-md
             "
         >
-          <img src={item.image} width={45} height={45} className="pb-5" />
+          <img src={item.image} width={45} height={45} className="pb-5 w-10" />
           <h2 className="text-[14px] text-center">{item.name}</h2>
         </div>
       ))}

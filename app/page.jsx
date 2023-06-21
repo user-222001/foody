@@ -49,13 +49,14 @@ const page = () => {
       <section>
         <div class="grid max-w-screen-xl px-4 pt-20  mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:pt-8">
           <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-6 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-black">
-              Building digital <br />
-              products &amp; brands.
+            <h1 class="tracking-wide font-s max-w-2xl mb-6 text-4xl font-extrabold leading-none  md:text-5xl xl:text-6xl dark:text-black">
+              Where every flavor
+              <br />
+              tells a story.
             </h1>
-            <p class="max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              This free and open-source landing page template was built using
-              the utility classes from and based on the components from the
+            <p class=" max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              landing page was built using the utility classes from and based on
+              the components from the nextjs
             </p>
           </div>
           <div class=" lg:mt-0 lg:col-span-5 lg:flex">

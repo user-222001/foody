@@ -7,14 +7,14 @@ function PostItem({ post, modal = false }) {
   return (
     <>
       {post ? (
-        <div className=" mb-28  cursor-pointer card card-side bg-base-100 shadow-xl">
-          <figure>
+        <div className=" mb-28 cursor-pointer card card-side bg-base-700 shadow-xl">
+          <div className="h-[23rem] w-60   ">
             <img
-              className="h-full  object-cover"
+              className=" rounded-xl"
               src={post.image ? post.image : PLACEHOLDER}
               alt="nodatafound"
             />
-          </figure>
+          </div>
           <div className="card-body">
             <h2 className="card-title"> {post.title}</h2>
             <div className="flex items-center text-orange-500 gap-2 mb-2">
@@ -28,7 +28,7 @@ function PostItem({ post, modal = false }) {
               <HiOutlineLocationMarker className="text-[20px]" />
               {post.location}
             </div>
-            <p className=" btn-wide truncate ...">{post.desc}</p>
+            <p className="text">{post.desc}</p>
             <div className="card-actions justify-end">
               {!modal ? <UserInfo user={post} /> : null}
               {modal ? (
