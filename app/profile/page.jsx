@@ -1,7 +1,7 @@
 "use client";
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
-import app from "./../../components/utilis/firebase.config";
+import app from "../../components/utilis/firebase.config";
 import {
   collection,
   deleteDoc,

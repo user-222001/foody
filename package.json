@@ -23,6 +23,7 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "daisyui": "^3.1.1"
+    "daisyui": "^3.1.1",
+    "encoding": "^0.1.13"
   }
 }
