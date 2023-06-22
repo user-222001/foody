@@ -21,8 +21,8 @@ function CreatePost() {
   const [file, setFile] = useState();
   const [submit, setSubmit] = useState(false);
 
-  // const { data: session, status } = useSession({ required: true });
-  const { data: session, status } = useSession();
+  const { data: session } = useSession({ required: true });
+  // const { data: session, status } = useSession();
   const db = getFirestore(app);
   const storage = getStorage(app);
   useEffect(() => {
