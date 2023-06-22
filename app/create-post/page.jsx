@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useSession } from "next-auth/react";
+import { getSession, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import app from "../../components/utilis/firebase.config";
 import { doc, getFirestore, setDoc } from "firebase/firestore";
@@ -10,18 +10,19 @@ import Data from "../../components/categories/data.cat";
 function CreatePost() {
   const router = useRouter();
 
-  useEffect(() => {
-    if (!session) {
-      router.push("/");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (!session) {
+  //     router.push("/");
+  //   }
+  // }, []);
   //........form handle
 
   const [inputs, setInputs] = useState({});
   const [file, setFile] = useState();
   const [submit, setSubmit] = useState(false);
 
-  const { data: session } = useSession();
+  // const { data: session, status } = useSession({ required: true });
+  const { data: session, status } = useSession();
   const db = getFirestore(app);
   const storage = getStorage(app);
   useEffect(() => {
@@ -159,3 +160,17 @@ rounded-md text-white"
 }
 
 export default CreatePost;
+
+export const getServerSideProps = async (context) => {
+  const session = await getSession(context);
+  if (!session) {
+    return {
+      redirect: {
+        destination: "./profile",
+      },
+    };
+  }
+  return {
+    props: { session },
+  };
+};
