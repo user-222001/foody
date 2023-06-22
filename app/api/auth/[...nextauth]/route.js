@@ -9,12 +9,6 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  secret: "test",
-  jwt: {
-    secret: "test",
-    encryption: true,
-    maxAge: 5 * 60,
-  },
 };
 const handler = NextAuth(authOptions);
 

@@ -47,19 +47,19 @@ const Homepage = () => {
   return (
     <div className="flex flex-col gap-10">
       <section>
-        <div class="grid max-w-screen-xl px-4 pt-20  mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:pt-8">
-          <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="tracking-wide font-s max-w-2xl mb-6 text-4xl font-extrabold leading-none  md:text-5xl xl:text-6xl dark:text-black">
+        <div className="grid max-w-screen-xl px-4 pt-20  mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 lg:pt-8">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h1 className="tracking-wide font-s max-w-2xl mb-6 text-4xl font-extrabold leading-none  md:text-5xl xl:text-6xl dark:text-black">
               Where every flavor
               <br />
               tells a story.
             </h1>
-            <p class=" max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className=" max-w-2xl font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               landing page was built using the utility classes from and based on
               the components from the nextjs
             </p>
           </div>
-          <div class=" lg:mt-0 lg:col-span-5 lg:flex">
+          <div className=" lg:mt-0 lg:col-span-5 lg:flex">
             <img
               className="rounded-[2rem]"
               src="https://images7.alphacoders.com/977/977986.jpg"
