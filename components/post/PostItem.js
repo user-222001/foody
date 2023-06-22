@@ -15,7 +15,7 @@ function PostItem({ post, modal = false }) {
               alt="nodatafound"
             />
           </div>
-          <div className="card-body">
+          <div className="card-body w-40">
             <h2 className="card-title"> {post.title}</h2>
             <div className="flex items-center text-orange-500 gap-2 mb-2">
               <HiOutlineCalendar className="text-[20px]" />

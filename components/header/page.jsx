@@ -9,9 +9,14 @@ const Header = () => {
 
   console.log(session);
   return (
-    <div className="navbar bg-base-100 fixed top-0 shadow-md  z-50 ">
+    <div className="navbar bg-base-100 fixed top-0 shadow-md px-10 z-50 ">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a
+          onClick={() => router.push("/")}
+          className="font-bold normal-case text-xl"
+        >
+          daisyUI
+        </a>
       </div>
       <div className="flex-none gap-10">
         <button
@@ -48,14 +53,20 @@ const Header = () => {
           </label>
           <div
             tabIndex={0}
-            className="mt-3 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
+            className="mt-3 p-2  dropdown-content bg-white shadow-xl rounded-lg w-72"
           >
             <>
-              <div className="justify-between">
+              <div>
                 {session ? (
-                  <div>
+                  <div className="flex flex-col gap-3 p-5">
                     <p>{session.user.name}</p>
                     <p> {session.user.email}</p>
+                    <button
+                      onClick={() => router.push("/profile")}
+                      className="btn btn-outline btn-primary"
+                    >
+                      Profile
+                    </button>
                   </div>
                 ) : (
                   <button
