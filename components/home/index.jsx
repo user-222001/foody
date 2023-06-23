@@ -31,7 +31,7 @@ const Homepage = () => {
   //..............
   const onGamePress = async (gameName) => {
     setPosts([]);
-    if (gameName == "Other Games") {
+    if (gameName == "Other Foods") {
       getPost();
       return;
     }

@@ -21,6 +21,9 @@ function PostItem({ post, modal = false }) {
               <HiOutlineCalendar className="text-[20px]" />
               {post.date}
             </div>
+            <div className="flex items-center text-orange-500 gap-2 mb-2">
+              {post.game}
+            </div>
             <div
               className="flex items-center 
       text-blue-500 gap-2 mb-2"

@@ -31,7 +31,7 @@ const GameList = [
   },
   {
     id: 7,
-    name: "Other Foods.png",
+    name: "Other Foods",
     image: "./images/vegetarian.png",
   },
 ];
